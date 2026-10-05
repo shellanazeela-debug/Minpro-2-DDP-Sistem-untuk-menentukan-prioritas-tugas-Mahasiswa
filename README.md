@@ -89,6 +89,15 @@ Bagian ini berfungsi untuk mengecek apakah sudah ada tugas yang tersimpan. Jika 
 <img width="413" height="302" alt="Screenshot 2026-10-06 011531" src="https://github.com/user-attachments/assets/1833cb0a-a217-4bb8-a928-0ad8170b0229" /> <br>
 Bagian ini berfungsi untuk menampilkan pilihan cara melihat daftar tugas. Pengguna dapat memilih melihat tugas dalam bentuk list, tabel, atau kembali ke menu utama. Jika pilihan 1 atau 2 dipilih, fungsi yang sesuai akan dijalankan. Terdapat percabangan if elif dan else untuk menentukan kondisi sesuai dengan nomor yang diinput dengan pengguna. Setelah itu terdapat `break` digunakan untuk kembali ke menu utama dan `else`diakhir digunakan untuk menangani pilihan yang tidak valid. <br>
 
+**OUTPUT**
+<img width="221" height="74" alt="Screenshot 2026-10-06 015906" src="https://github.com/user-attachments/assets/96f97c35-ab06-497c-9c6e-cc455b7f009e" /> <br>
+
+<img width="229" height="350" alt="Screenshot 2026-10-06 015857" src="https://github.com/user-attachments/assets/fba21530-d135-44c3-8dc2-d8b4bf4ed6fa" /> <br>
+<img width="473" height="132" alt="Screenshot 2026-10-06 015921" src="https://github.com/user-attachments/assets/09a1c20b-3642-4726-b96c-1cb15c732327" /> <br> 
+
+
+
+
 
 
 
