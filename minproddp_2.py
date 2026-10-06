@@ -19,9 +19,12 @@ def login():
     print("===================================")
     print(" SISTEM PRIORITAS TUGAS MAHASISWA ")
     print("===================================")
-    
     print("=== HALAMAN LOGIN ===")
     Nama = input("MAU DIPANGGIL SIAPA?: ")
+    while Nama == "":
+        print("Nama tidak boleh kosong!")
+        Nama = input("MAU DIPANGGIL SIAPA?: ")
+
     print("Pilih role anda! yang tersedia:admin/mahasiswa")
     username = input("Username: ")
     password = pwinput.pwinput("Password: ")
@@ -33,7 +36,7 @@ def login():
 
     print(f"Selamat datang {Nama} dengan role {akun[username]['role']}!")
     input("ayo lanjut dengan Tekan Enter ^^...")
-    return akun[username]["role"]
+    return akun[username]["role"], Nama
 
 def tentukan_prioritas(hari, kesulitan):
     if hari <= 2 :
@@ -41,8 +44,6 @@ def tentukan_prioritas(hari, kesulitan):
     elif hari <= 5 and kesulitan >=4:
         return "Tinggi"
     elif hari <= 5:
-        return "Sedang"
-    elif hari >= 4:
         return "Sedang"
     else:
         return "Rendah"
@@ -192,13 +193,18 @@ def hapus_tugas():
 def ubah_tugas():
     clear()
     print("===== UBAH TUGAS =====")
-
     index = pilih_tugas()
-
     if index != -1:
         print("Masukkan data tugas yang baru:")
         Tugas[index] = tambah_tugas()
         print("Tugas berhasil diubah!")
+        print("Tugas Berhasil diubah! ^^")
+        print("===================================")
+        print("Nama Tugas      :", Tugas[index]["nama"])
+        print("Sisa hari       :", Tugas[index]["hari"])
+        print("Skala kesulitan :", Tugas[index]["kesulitan"])
+        print("Tingkat         :", Tugas[index]["tingkat"])
+        print("Prioritas       :", Tugas[index]["prioritas"])
     jeda()
 
 role = login()
