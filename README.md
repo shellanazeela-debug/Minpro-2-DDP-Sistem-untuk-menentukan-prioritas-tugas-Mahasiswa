@@ -6,6 +6,8 @@ Nim : 2609116018 <br>
  =========== **LAPORAN MENGENAI MINI PROJECT : SISTEM UNTUK MENENTUKAN PRIORITAS TUGAS MAHASISWA** ===========<br>
 Sistem Prioritas Tugas Mahasiswa merupakan program berbasis Python yang digunakan untuk membantu mahasiswa mencatat dan mengatur prioritas tugas berdasarkan sisa waktu pengerjaan dan tingkat kesulitan tugas. Program ini memiliki fitur login dengan dua role, yaitu Admin dan Mahasiswa, yang memiliki hak akses berbeda. Pengguna dapat menambahkan tugas dengan memasukkan nama tugas, sisa hari pengerjaan, dan skala kesulitan dari 1 sampai 5. Berdasarkan data tersebut, program akan menentukan tingkat kesulitan dan prioritas tugas secara otomatis. Program juga menyediakan fitur untuk melihat tugas dalam bentuk list maupun tabel, mengubah tugas, dan menghapus tugas.<br>
 
+
+
 **PENJELASAN PROGRAM & OUTPUT SERTA DOKUMENTASI**
 *A. MEMBUAT FUNGSI LOGIN* <BR>
 1. IMPORT LIBRARY<BR>
@@ -29,6 +31,9 @@ Bagian ini berfungsi untuk memeriksa kebenaran username dan password yang telah 
 <img width="296" height="151" alt="image" src="https://github.com/user-attachments/assets/1b6e72f9-fc5f-469e-9a86-5967dfa74f6a" /> < <BR>
 Output diatas berisikan halaman pengguna ketika telah memasukkan nama panggilan dan juga memilih role antara admin/mahasiswa yang dimana akan membedakan tampilan menu yang ada. <br>
 
+
+
+
 *B.MEMBUAT FUNGSI UNTUK MENU UTAMA PENGGUNA* <br>
 1. MEMBUAT TAMPILAN MENU UNTUK ADMIN DAN UNTUK MAHASISWA<br>
 <img width="371" height="233" alt="Screenshot 2026-10-06 004205" src="https://github.com/user-attachments/assets/e586f58a-badc-4788-aa92-caffbca17d3c" /> <br>
@@ -43,6 +48,10 @@ KETIKA MENGGUNAKAN ROLE ADMIN <BR>
 Admin menggunakan username dan password yang berbeda sehingga ketika login dengan role admin, akan menampilkan sepenuhnya menu seperti akses tambah, lihat, hapus, ubah tugas,dan keluar.<br>
 <img width="191" height="74" alt="Screenshot 2026-10-06 010320" src="https://github.com/user-attachments/assets/68dcb584-fe67-45f6-81a9-bef662009f4c" /> <br>
 Role mahasiswa menggunakan username dan password yang berbeda sehingga ketika login dengan role mahasiswa, akan menampilkan beberapa menu yang cukup terbatas tidak seperti admin, yaitu akses tambah, lihat dan keluar.<br>
+
+
+
+
 
 *C.MEMBUAT TAMBAH TUGAS UNTUK MENU PENGGUNA* <br>
 1.FUNGSI UNTUK INPUT NAMA TUGAS <BR>
@@ -73,6 +82,10 @@ Fungsi ini digunakan untuk menambahkan tugas baru ke dalam daftar tugas. Program
 <img width="246" height="262" alt="Screenshot 2026-10-06 013719" src="https://github.com/user-attachments/assets/6d910a3d-23b2-4f2a-a866-4fa2e8bf2e3b" /> <br>
 Output diatas merupakan hasil dari menu tambah yang menampilkan nama tugas yang diinput, sisa hari, dan skala kesulitan. Dengan sistem logika diatas, akhirnya sistem menentukan seberapa prioritasnya suatu tugas dan langsung ditampilkan setelah selesai menambahkan semuanya. <br>
 
+
+
+
+
 *D.MEMBUAT SISTEM MENAMPILKAN TUGAS DALAM MENU PENGGUNA* <br>
 1.MENAMPILKAN TUGAS DALAM BENTUK LIST<BR>
 <img width="404" height="119" alt="Screenshot 2026-10-06 011441" src="https://github.com/user-attachments/assets/05717ab5-34ee-4b6c-8230-2a0302b0d13f" /> <br>
@@ -85,15 +98,67 @@ Bagian ini berfungsi untuk memasukkan setiap data tugas ke dalam tabel menggunak
 3. KETIKA TIDAK ADA TUGAS YANG MAU DITAMPILKAN <BR>
 <img width="467" height="92" alt="Screenshot 2026-10-06 011514" src="https://github.com/user-attachments/assets/45e82f43-0236-49ae-91e6-bd0819fa2de5" /> <BR>
 Bagian ini berfungsi untuk mengecek apakah sudah ada tugas yang tersimpan. Jika `Tugas` masih kosong, program menampilkan pesan bahwa belum ada tugas, lalu `jeda()` menunggu pengguna menekan Enter. `return` digunakan untuk menghentikan fungsi agar tidak melanjutkan ke proses berikutnya.<BR>
-4. MENAMPILKAN MENU UNTUK MENAMPILKAN TUGAS SERTA LOGIKANYA <BR.
+4. MENAMPILKAN MENU UNTUK MENAMPILKAN TUGAS SERTA LOGIKANYA <BR>.
 <img width="413" height="302" alt="Screenshot 2026-10-06 011531" src="https://github.com/user-attachments/assets/1833cb0a-a217-4bb8-a928-0ad8170b0229" /> <br>
 Bagian ini berfungsi untuk menampilkan pilihan cara melihat daftar tugas. Pengguna dapat memilih melihat tugas dalam bentuk list, tabel, atau kembali ke menu utama. Jika pilihan 1 atau 2 dipilih, fungsi yang sesuai akan dijalankan. Terdapat percabangan if elif dan else untuk menentukan kondisi sesuai dengan nomor yang diinput dengan pengguna. Setelah itu terdapat `break` digunakan untuk kembali ke menu utama dan `else`diakhir digunakan untuk menangani pilihan yang tidak valid. <br>
 
 **OUTPUT**
 <img width="221" height="74" alt="Screenshot 2026-10-06 015906" src="https://github.com/user-attachments/assets/96f97c35-ab06-497c-9c6e-cc455b7f009e" /> <br>
+Merupakan hasil input pada menu utama ketika pengguna ingin melihat semua list tugas. pengguna bisa memilih untuk melihat tugas dalam bentuk list ataupun tugas.<br>
 
 <img width="229" height="350" alt="Screenshot 2026-10-06 015857" src="https://github.com/user-attachments/assets/fba21530-d135-44c3-8dc2-d8b4bf4ed6fa" /> <br>
+ketika pengguna memilih untuk melihat daftar tugas dalam bentuk list, diatas merupakan hasil output daftar tugas dalam bentuk list.<br>
 <img width="473" height="132" alt="Screenshot 2026-10-06 015921" src="https://github.com/user-attachments/assets/09a1c20b-3642-4726-b96c-1cb15c732327" /> <br> 
+Ketika pengguna memilih untuk melihat daftar tugas dalam bentuk table, diatas merupakan hasil output dari daftar tugas dalam bentuk table. <Br>
+
+
+
+
+
+
+*E.MEMBUAT SISTEM MENGHAPUS TUGAS YANG ADA DALAM MENU PENGGUNA* <br>
+1.MEMBUAT SISTEM PILIH TUGAS TERLEBIH DAHULU <BR>
+<img width="494" height="165" alt="Screenshot 2026-10-06 011545" src="https://github.com/user-attachments/assets/ef3ee35d-52d2-4001-9755-eca6315daaf9" /> <BR>
+Bagian ini digunakan untuk memilih tugas yang ingin diubah atau dihapus. Program mengecek apakah ada tugas, lalu meminta nomor tugas dan memastikan nomor yang dimasukkan benar.Benar disini adalah ketika nomor yang dimasukkan adalah sebuah angka, dan dan nomor terdapat dalam data `Tugas`. Jika tidak sesuai, sistem akan mengulang hingga akhirnya benar. Setelah itu,`return int(nomor) - 1` mengembalikan nomor tugas yang dipilih. <br>
+
+2.MEMBUAT SISTEM MENGHAPUS TUGAS<BR>
+<img width="397" height="120" alt="Screenshot 2026-10-06 011555" src="https://github.com/user-attachments/assets/b480eaea-9ff3-473d-be43-4be59268b9c1" /><BR>
+Bagian diatas berguna untuk menghapus tugas yang dipilih. Yang dimana program akan meminta nomor tugas melalui pilih_tugas(), kemudian pop() menghapus tugas tersebut dari daftar. Setelah berhasil, nama tugas yang dihapus ditampilkan. <br>
+
+**OUTPUT**
+<img width="448" height="143" alt="Screenshot 2026-10-06 104344" src="https://github.com/user-attachments/assets/604487ac-09ce-47e5-9ba0-33289ccdcfe3" /> <br>
+Merupakan hasil dari sistem menghapus tugas yang dimana pertama sistem akan menampilkan tugas yang tersedia, lalu ketika pengguna menginput nomor tugas yang akan dihapus, sistem akan menghapus tugas yang telah dipilih pengguna. <br>
+
+
+*F.MEMBUAT SISTEM MENGUBAH TUGAS YANG ADA DALAM MENU PENGGUNA* <br>
+<img width="434" height="230" alt="Screenshot 2026-10-06 111108" src="https://github.com/user-attachments/assets/24ffe525-a94a-45d8-94f2-5a1f60ac2b23" /> <br>
+Bagian ini digunakan untuk mengubah data tugas yang sudah ada. Program meminta pengguna memilih tugas melalui pilih_tugas()(variable yang telah dibuat saat ingin menghapus tugas), kemudian memasukkan data tugas yang baru melalui tambah_tugas()(variabel yang dibuat ketika ingin menambah tugas). Data lama akan diganti dengan data baru menggunakan Tugas[index]. Setelah berhasil, program menampilkan pesan bahwa tugas telah diubah. <br>
+
+**OUTPUT**<br>
+<img width="468" height="356" alt="Screenshot 2026-10-06 111053" src="https://github.com/user-attachments/assets/ef2c08ae-62d3-4a85-a5bb-10ca215cb069" /> <br>
+Output diatas merupakan hasil dari sistem mengubah tugas yang telah diinput oleh admin. Setelah selesai mengubah, sistem akan menampilkan hasil perubahan tugas yang telah dilakukan oleh user. <br>
+
+**ROLE LOGIN**<br>
+<img width="179" height="23" alt="image" src="https://github.com/user-attachments/assets/524d9b7d-1ade-48a4-8291-72a537a2b830" /> <BR>
+Bagian ini berfungsi untuk menjalankan fungsi login() dan menyimpan role pengguna yang berhasil login ke dalam variabel role. Role ini nantinya digunakan untuk menentukan menu yang bisa diakses, seperti menu admin atau mahasiswa.<br>
+
+
+
+
+*F.MEMBUAT SISTEM KELUAR* <br>
+<img width="405" height="101" alt="Screenshot 2026-10-06 111508" src="https://github.com/user-attachments/assets/1f8f9ee4-6981-4cc4-8f57-e1921149c5a8" /> <BR>
+Bagian ini berfungsi Ketika pengguna memilih menu keluar, sistem akan menampilkan penutup program. `clear()` membersihkan layar, kemudian program menampilkan ucapan terima kasih kepada pengguna berdasarkan nama yang dimasukkan saat login, serta memberikan pesan agar tugas dapat diselesaikan tepat waktu dan mendapat nilai yang baik.<br>
+
+**OUTPUT**<br>
+<img width="402" height="104" alt="image" src="https://github.com/user-attachments/assets/cc385898-432c-4c3d-b554-b46587866cb2" /><BR>
+
+
+
+
+
+
+
+
 
 
 
